@@ -119,6 +119,7 @@ img {
 .nav-link:focus {
     color: #4D5AE5;
 }
+
 .nav-link {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -128,7 +129,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent-color);
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .communication {
@@ -152,6 +153,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* =====================/HEADER==================== */
@@ -186,7 +188,7 @@ img {
 .hero-button:hover,
 .hero-button:focus {
     color: #FFFFFF;
-    background-color: #4D5AE5;
+    background-color: #404BBF;
 }
 .hero-button {
     padding-top: 16px;
@@ -203,6 +205,8 @@ img {
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 /* ======================/HERO====================== */
 
@@ -339,6 +343,7 @@ img {
 
 .customers-list-icon {
     fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list-link {
@@ -424,6 +429,7 @@ img {
     height: 40px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ======================/FOOTER===================== */
 
@@ -455,6 +461,7 @@ img {
     color: #4D5AE5;
     cursor: pointer;
     border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-portfolio {
