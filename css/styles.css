@@ -133,6 +133,24 @@ img {
     transition: color var(--transition-dur-and-func);
 }
 
+/* .nav-link {
+    position: relative;
+    line-height: 4px;
+}
+
+.nav-link::after {
+    display: block;
+    position: absolute;
+    width: 78px;
+    height: 4px;
+    left: 0px;
+    top: 48px;
+    background: #4D5AE5;
+    border-radius: 2px;
+    content: "";
+        
+} */
+
 .communication {
     display: flex;
     flex-wrap: wrap;
