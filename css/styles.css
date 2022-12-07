@@ -5,6 +5,7 @@
     --secondary-text-color: #434455;
     --accent-color: #2E2F42;
     --secondary-footer-color: #E7E9FC;
+    --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -129,7 +130,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-dur-and-func);
 }
 
 .communication {
@@ -153,7 +154,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-dur-and-func);
 }
 
 /* =====================/HEADER==================== */
@@ -205,7 +206,7 @@ img {
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
 
 }
 /* ======================/HERO====================== */
@@ -343,7 +344,7 @@ img {
 
 .customers-list-icon {
     fill: currentColor;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-dur-and-func);
 }
 
 .customers-list-link {
@@ -429,9 +430,65 @@ img {
     height: 40px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition-dur-and-func);
 }
 /* ======================/FOOTER===================== */
+
+/* ===================== MODAL WINDOW =================== */
+
+.backdrop {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity var(--transition-dur-and-func),
+    visibility var(--transition-dur-and-func);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    height: 576px;
+    background-color: #FCFCFC;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid #E7E9FC;
+    transition: box-shadow var(--transition-dur-and-func);
+
+}
+
+/* ==================== /MODAL WINDOW ================== */
 
 /* ======================MAIN PORTFOLIO===================== */
 
@@ -461,7 +518,9 @@ img {
     color: #4D5AE5;
     cursor: pointer;
     border-radius: 4px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-dur-and-func), 
+    background-color var(--transition-dur-and-func), 
+    box-shadow var(--transition-dur-and-func);
 }
 
 .menu-portfolio {
@@ -531,7 +590,7 @@ img {
     height: 100%;
     overflow: auto;
     transform: translate(0, 100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--transition-dur-and-func);
     text-align: center;
     padding-top: 40px;
     padding-right: 32px;
