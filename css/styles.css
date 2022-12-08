@@ -137,6 +137,10 @@ img {
     position: relative;
 }
 
+.nav-link.activ {
+    color: #4D5AE5;
+}
+
 .nav-link.activ::after {
     position: absolute;
     width: 100%;
@@ -494,6 +498,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     width: 24px;
     height: 24px;
     border-radius: 50%;
