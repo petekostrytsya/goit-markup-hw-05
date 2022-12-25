@@ -14,31 +14,14 @@ h1,h2,h3,h4,p {
     margin-bottom: 0;
 }
 
-.container {
-    width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* ====================COMPONENTS==================== */
-/* цвет основного текста h1 #FFFFFF  */
-/* цвет второстепенного текста h2 & h3 #2E2F42 */
-/* абзац #434455 */
-
 body {
     font-family: var(--primary-font);
     background-color: #FFFFFF;
     color: #434455;
 }
 
-.section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
-ul, ol {
+ul,
+ol {
     list-style: none;
     margin-top: 0;
     margin-bottom: 0;
@@ -47,6 +30,24 @@ ul, ol {
 
 img {
     display: block;
+}
+
+/* ====================COMPONENTS==================== */
+/* цвет основного текста h1 #FFFFFF  */
+/* цвет второстепенного текста h2 & h3 #2E2F42 */
+/* абзац #434455 */
+
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .logo-studio-dark,
@@ -111,7 +112,6 @@ img {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--accent-color);
 }
@@ -128,7 +128,6 @@ img {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
     color: var(--accent-color);
     transition: color var(--transition-dur-and-func);
 }
@@ -218,7 +217,6 @@ img {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.19;
-    letter-spacing: 0.04em;
     color: #FFFFFF;
     background-color: #4D5AE5;
     border-color: transparent;
